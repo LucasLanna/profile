@@ -1,21 +1,41 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  height: 180vh;
   margin: 0;
   text-align: center;
   background-color: rgb(38, 35, 54);
   color: white;
+  padding: 100px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #28243d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header, .about, .social-links {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #3a3755;
+  border-radius: 10px;
+}
+
+.header h1, .about h2, .social-links h2 {
+  margin-top: 0;
 }
 
 h1, h2, h3 {
   font-family: 'Times New Roman', sans-serif;
-  color: #ffffff; /* Golden yellow color */
+  color: #ffffff;
 }
 
 h1 {
@@ -47,7 +67,7 @@ a.button {
   color: rgb(255, 255, 255);
   background-color: rgb(32, 8, 36);
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -56,8 +76,39 @@ a.button:hover {
   color: rgb(21, 1, 46);
 }
 
-.social-links {
-  margin-top: 20px;
+.check-page-position{
+  margin-bottom: 0px;
+}
+
+.video-button-position{
+  height: 120px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-project-button {
+  display: inline-block;
+  font-family: 'arial', black;
+  margin: 0px;
+  padding: 12px 24px;
+  font-size: 25px;
+  color: rgb(19, 2, 31);
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#video-project-button:hover {
+  background-color: rgb(55, 42, 66);
+  color: rgb(59, 22, 104);
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .social-links a {
